@@ -1,6 +1,6 @@
 產生及解析 LOM XML 資料
 
-LOM XML 規格說明:
+LOM XML 規格說明:http://moodle.tcu.edu.tw/pluginfile.php/432711/mod_forum/attachment/90741/SCORM%E6%A8%99%E6%BA%96%E8%AA%AA%E6%98%8E.docx
 
 參考資料:如 SCOMRExample 目錄當中 IMSManifest.xml 當中之 LOM Metadata
 

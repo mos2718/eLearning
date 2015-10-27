@@ -1,0 +1,13 @@
+具安全保護之內容管理系統
+
+需求說明:
+1.不安全的作法
+撰寫 web server 程式,接收包含 content ID (item identifier)之 HTTP request, 由 imsmanifest.xml 找到其 resource href 以及 file hrefs, 以此讓 web server 回應對應之網頁及檔案，讓瀏覽器端可檢視 content ID 指定之網頁內容。(可為 CGI, Java, ASP.net, PHP..., 不確定架在 web server 上之 ASP.net, PHP 程式是否容易完成此功能)。
+
+2.進一步安全的作法
+設計與入口網站結合，修改上述後端內容伺服器程式，讓僅有經認證授權的使用者，才可瀏覽上述內容。
+
+備註:
+1.這是許多相片、影片平台、入口網、社群網站管理內容必備的功能: 可讓用戶上傳發佈內容，但發佈之內容需有恰當的保護機制。非完全公開，讓任何人只要取得內容之 URL ，即可連結檢視。
+
+2.一般 web server 與瀏覽器互動，是由瀏覽器以特定之 URL resquest，server response 主網頁，瀏覽器解析主網頁，由此找到此網頁須包含之額外資源資料，以此啟動一系列之 HTTP resquest，以取得這些資源，才完整呈現網頁內容。過程當中不需要 imsmanifest 當中之 file hrefs 資訊。但一般 web server 互動機制可能會產生調閱資源的漏洞?
