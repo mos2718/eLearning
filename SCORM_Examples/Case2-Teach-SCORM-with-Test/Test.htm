@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Test 1</title>
+    <script type="text/javascript" src="js/APIWrapper.js"></script>
+    <script type="text/javascript" src="js/SCOFunctions.js"></script>
+    <script type="text/javascript">
+
+
+function Submit1_onclick() { 
+ var Score , ST_Selected;
+ if(document.getElementById("Radio1").checked ==true) { Score=0;  ST_Selected = "IMSManifest"; }
+ if(document.getElementById("Radio2").checked ==true) { Score=0;  ST_Selected = "RTE"; }
+ if(document.getElementById("Radio3").checked ==true) { Score=0;  ST_Selected = "LOM"; }
+ if(document.getElementById("Radio4").checked ==true) { Score=100; ST_Selected = "CSS"; }
+ doLMSSetValue('cmi.core.score.raw', Score);   //分數
+ doLMSSetValue('cmi.interactions.0.id', 'Test1');
+ doLMSSetValue('cmi.interactions.0.student_response', ST_Selected);  //選擇項目
+ if(Score ==0 ){  alert("拜託! 上課請專心一點"); }
+     else {  alert("答對了! 一百分"); }
+}
+
+</script>
+   
+    <style type="text/css">
+        #Button1
+        {
+            width: 109px;
+        }
+        #Submit1
+        {
+            width: 108px;
+            height: 27px;
+        }
+    </style>
+   
+</head>
+<body  onload="loadPage()" onunload="unloadPage()">
+    <p>
+        下列何者不屬於 SCORM 規範內容</p>
+    <p>
+        <input id="Radio1" name="R1" type="radio" value="V1" onclick="return Radio1_onclick()" />IMSManifest&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="Radio2" name="R1" type="radio" value="V1" />RTE&nbsp;&nbsp;
+        <input id="Radio3" name="R1" type="radio" value="V1" />LOM&nbsp;&nbsp;         
+        <input id="Radio4" name="R1" type="radio" value="V1" />CSS</p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="Submit1" type="submit" value="submit" onclick="return Submit1_onclick()" /></p>
+
+</body>
+</html>

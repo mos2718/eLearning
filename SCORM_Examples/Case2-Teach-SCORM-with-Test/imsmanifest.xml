@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-2E242F925909FAA657524725A3E003C4" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-5128D570D4DD1493D1B758D30CED836A">
+    <organization identifier="ORG-5128D570D4DD1493D1B758D30CED836A" structure="hierarchical">
+      <title>Organization</title>
+      <item identifier="ITEM-485D600D3BEFD99D48CE08AEDC3461E1" isvisible="true" identifierref="RES-B04B1F69DB8354FDEE630AD1B2A8E592">
+        <title>SCROM Introduction</title>
+      </item>
+      <item identifier="ITEM-AB03213F618D6E5A27AA1AE5DA5B43A6" isvisible="true" identifierref="RES-F3106F4C263957A47C02723620F2FEAD">
+        <title>Test 1</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-B04B1F69DB8354FDEE630AD1B2A8E592" type="webcontent" href="Introduction.htm">
+      <file href="Introduction.htm" />
+      <file href="js/APIWrapper.js" />
+      <file href="js/SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-F3106F4C263957A47C02723620F2FEAD" type="webcontent" href="Test.htm">
+      <file href="Test.htm" />
+      <file href="js/APIWrapper.js" />
+      <file href="js/SCOFunctions.js" />
+    </resource>
+  </resources>
+</manifest>
+
