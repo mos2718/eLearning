@@ -1,0 +1,10 @@
+產生及解析 LOM XML 資料
+
+LOM XML 規格說明:
+
+參考資料:如 SCOMRExample 目錄當中 IMSManifest.xml 當中之 LOM Metadata
+
+範例程式一:
+
+範例程式二:
+https://github.com/RusticiSoftware/SCORMCloud_NetLibrary/blob/master/Metadata.cs
